@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vacation Planner</title>
+<style>
+  :root {
+    --accent: #6c4fc7;
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5a5a5a;
+    --card-bg: #f6f4fb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  header {
+    background: var(--accent);
+    color: #fff;
+    padding: 48px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 8px;
+    font-size: 2.2rem;
+  }
+  header p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .feature-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 18px;
+  }
+  .feature-card h3 {
+    margin: 0 0 6px;
+    font-size: 1.05rem;
+    color: var(--accent);
+  }
+  .feature-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .download-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  .download-btn:hover {
+    opacity: 0.9;
+  }
+  footer {
+    text-align: center;
+    padding: 24px 20px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Vacation Planner</h1>
+  <p>An Android app for planning and tracking your trips</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>About the App</h2>
+    <p>
+      Vacation Planner is an Android app that lets you create an account, log in,
+      and manage a personal list of vacations — each with its own lodging details,
+      travel dates, and optional excursions. Every account only ever sees its own
+      data, and everything is stored locally on the device, so no internet
+      connection or external server is required.
+    </p>
+  </section>
+
+  <section>
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Secure Login</h3>
+        <p>Accounts are protected with salted, hashed passwords — your plain-text password is never stored.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Vacation Tracking</h3>
+        <p>Add, edit, and delete vacations with a title, lodging, and start/end dates.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Excursions</h3>
+        <p>Attach activities to each vacation, with dates that stay within the trip's own date range.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Search</h3>
+        <p>Quickly filter your vacation list by title as you type.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Reports</h3>
+        <p>Generate a timestamped report of all your vacations and their excursions, ready to share.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Share Anywhere</h3>
+        <p>Share a single vacation or a full report through any app on your device — text, email, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Download</h2>
+    <p>Get the latest version of Vacation Planner for Android:</p>
+    <a class="download-btn" href="#">Download APK</a>
+    <p style="font-size: 0.85rem; color: var(--muted); margin-top: 10px;">
+     *add apk link here after creating it
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  Vacation Planner &mdash; built as a school project.
+</footer>
+
+</body>
+</html>
